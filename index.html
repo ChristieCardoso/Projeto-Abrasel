@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Renda</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body style="background: linear-gradient(to right, rgb(29, 136, 207), rgb(110, 25, 143));">
+    <header>
+        <div class="img-capa">
+            <div class="img"><img src="/fetch-api/img/logo.jpg" alt="Responsive image" height="250" style="width:100%">
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div>
+            <fieldset>
+                <legend>Cadastro</legend>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                </div>
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="text" maxlength="9" class="form-control" id="cep" placeholder="Digite seu Cep">
+                </div>
+                <div>
+                    <label for="renda">Renda Mensal:</label>
+                    <input type="text" class="form-control" id="renda" placeholder="Digite sua renda mensal">
+                </div>
+                <div>
+                    <label for="dependentes">Número de Dependentes:</label>
+                    <input type="text" class="form-control" id="dependentes" placeholder="Número de Dependentes">
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-info" type="button" onclick="calculate()">Pressionar</button>
+                </div>
+
+                <legend>Resultado</legend>
+                <p id="nomeres"></p>               
+                
+                <div>
+                    <label for="resultado">Resultado:</label>
+                    <input type="text" class="form-control" id="resultado">                    
+                </div>
+                <div>
+                    <label for="logradouro">Rua:</label>
+                    <input type="text" class="form-control" id="logradouro">
+                </div>
+                <div>
+                    <label for="bairro">Bairro</label>
+                    <input type="text" class="form-control" id="bairro">
+                </div>
+                <div>
+                    <label for="localidade">Localidade</label>
+                    <input type="text" class="form-control" id="localidade">
+                </div>
+                <div>
+                    <label for="uf">UF</label>
+                    <input type="text" class="form-control" id="uf">
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <hr>
+    <footer class="text-center corSecundaria textoFooter">
+        <p class="textoBranco">Copyright © 2022 </p>
+    </footer>
+
+    <script src="src-js/main.js"></script>
+
+</body>
+
+</html>
